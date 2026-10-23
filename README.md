@@ -317,7 +317,4 @@ Local user paths in supplied diagnostic metadata have been replaced with
 portable references. Evaluation token IDs and measured metrics are preserved.
 See [release notes](docs/RELEASE_NOTES.md) for code changes and validation limits.
 
-The original archive did not specify a code license. The author should choose
-one before advertising unrestricted reuse; see [LICENSE-NOTICE.md](LICENSE-NOTICE.md).
-Dataset text has separate terms. Dataset/checkpoint outputs and credentials are
-excluded from version control by `.gitignore`.
+License under MIT License
