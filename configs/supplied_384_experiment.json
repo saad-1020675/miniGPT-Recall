@@ -1,0 +1,14 @@
+{
+  "block_size": 256,
+  "emb_dims": 384,
+  "memory_slots": 8,
+  "memory_slot_dims": 384,
+  "head_num": 4,
+  "num_blocks": 4,
+  "num_encoder_blocks": 4,
+  "memory_pooling_heads": 4,
+  "memory_routing_passes": 3,
+  "memory_write_chunk_size": 256,
+  "dropout": 0.2,
+  "MIXED_RECALL_RATIO": 0.3
+}

@@ -1,0 +1,770 @@
+{
+  "note": "Historical logs; peaks may be different checkpoints; missing metadata is unknown, not inferred from filenames.",
+  "runs": [
+    {
+      "file": "memory_diagnostic_memslot32_per-slotGRU.jsonl",
+      "records": 12,
+      "first_logged_tokens": 20004864,
+      "final_logged_tokens": 240009216,
+      "best_exact": 0.6484375,
+      "best_exact_at_tokens": 240009216,
+      "best_first": 0.6875,
+      "best_first_at_tokens": 240009216,
+      "final_normal": {
+        "first_accuracy": 0.6875,
+        "exact_accuracy": 0.6484375,
+        "ce": 1.9455366275614403,
+        "tokens": 350,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.02734375,
+        "exact_accuracy": 0.0234375,
+        "ce": 8.096054072039468,
+        "tokens": 350,
+        "samples": 256
+      },
+      "writer_config": {
+        "block_size": 256,
+        "sequence_windows": 3,
+        "routing_passes": 3,
+        "pooling_heads": 4,
+        "write_chunk_size": 256,
+        "encoder_scope": "full_window"
+      },
+      "recall_includes_newline": null,
+      "support_window": "source",
+      "support_label": false,
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostic_width384_mem8_mixed30-70.jsonl",
+      "records": 17,
+      "first_logged_tokens": 0,
+      "final_logged_tokens": 320008192,
+      "best_exact": 0.80859375,
+      "best_exact_at_tokens": 140001280,
+      "best_first": 0.8671875,
+      "best_first_at_tokens": 20000768,
+      "final_normal": {
+        "first_accuracy": 0.859375,
+        "exact_accuracy": 0.7890625,
+        "ce": 1.11113571246495,
+        "tokens": 366,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.08203125,
+        "exact_accuracy": 0.078125,
+        "ce": 6.369422368338851,
+        "tokens": 366,
+        "samples": 256
+      },
+      "writer_config": {
+        "block_size": 256,
+        "memory_slots": 8,
+        "memory_slot_dims": 384,
+        "sequence_windows": 5,
+        "routing_passes": 3,
+        "pooling_heads": 4,
+        "write_chunk_size": 256,
+        "encoder_scope": "full_window"
+      },
+      "recall_includes_newline": true,
+      "support_window": "not recorded",
+      "support_label": "not recorded",
+      "recall_ratio": 0.3,
+      "ratio_basis": "optimizer_updates",
+      "best_prose_lm": 4.7848851680755615,
+      "best_prose_at_tokens": 300003328,
+      "recall_at_best_prose": 0.78125,
+      "final_prose_lm": 4.790645390748978
+    },
+    {
+      "file": "memory_diagnostics_1_chunk._sequence-3_no_label.jsonl",
+      "records": 12,
+      "first_logged_tokens": 20004864,
+      "final_logged_tokens": 240009216,
+      "best_exact": 0.625,
+      "best_exact_at_tokens": 240009216,
+      "best_first": 0.66015625,
+      "best_first_at_tokens": 220004352,
+      "final_normal": {
+        "first_accuracy": 0.66015625,
+        "exact_accuracy": 0.625,
+        "ce": 2.4152487967952663,
+        "tokens": 350,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.02734375,
+        "exact_accuracy": 0.02734375,
+        "ce": 8.26334332300084,
+        "tokens": 350,
+        "samples": 256
+      },
+      "writer_config": {
+        "block_size": 256,
+        "sequence_windows": 3,
+        "routing_passes": 3,
+        "pooling_heads": 4,
+        "write_chunk_size": 256,
+        "encoder_scope": "full_window"
+      },
+      "recall_includes_newline": null,
+      "support_window": "source",
+      "support_label": false,
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_Decoder_Only_W4_Evidence.jsonl",
+      "records": 46,
+      "first_logged_tokens": 5017600,
+      "final_logged_tokens": 225013760,
+      "best_exact": 0.71484375,
+      "best_exact_at_tokens": 205004800,
+      "best_first": 0.80859375,
+      "best_first_at_tokens": 225013760,
+      "final_normal": {
+        "first_accuracy": 0.80859375,
+        "exact_accuracy": 0.70703125,
+        "ce": 2.0812784031609803,
+        "tokens": 362,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.80859375,
+        "exact_accuracy": 0.70703125,
+        "ce": 2.0812784031609803,
+        "tokens": 362,
+        "samples": 256
+      },
+      "writer_config": null,
+      "recall_includes_newline": null,
+      "support_window": "not recorded",
+      "support_label": "not recorded",
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_W0_Evidence_weight10.jsonl",
+      "records": 253,
+      "first_logged_tokens": 2000015360,
+      "final_logged_tokens": 3680010240,
+      "best_exact": 0.57421875,
+      "best_exact_at_tokens": 2295009280,
+      "best_first": 0.65625,
+      "best_first_at_tokens": 2315018240,
+      "final_normal": {
+        "first_accuracy": 0.46484375,
+        "exact_accuracy": 0.40234375,
+        "ce": 3.9103617668151855,
+        "tokens": 368,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0,
+        "exact_accuracy": 0.0,
+        "ce": 14.889055169146994,
+        "tokens": 368,
+        "samples": 256
+      },
+      "writer_config": null,
+      "recall_includes_newline": null,
+      "support_window": "not recorded",
+      "support_label": "not recorded",
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_W3_Evidence_Memory_Only_Pt1.jsonl",
+      "records": 173,
+      "first_logged_tokens": 5017600,
+      "final_logged_tokens": 865013760,
+      "best_exact": 0.35546875,
+      "best_exact_at_tokens": 805007360,
+      "best_first": 0.3984375,
+      "best_first_at_tokens": 795013120,
+      "final_normal": {
+        "first_accuracy": 0.37109375,
+        "exact_accuracy": 0.32421875,
+        "ce": 4.54361404503248,
+        "tokens": 362,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0,
+        "exact_accuracy": 0.0,
+        "ce": 14.93848710033775,
+        "tokens": 362,
+        "samples": 256
+      },
+      "writer_config": null,
+      "recall_includes_newline": null,
+      "support_window": "not recorded",
+      "support_label": "not recorded",
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_chunks_sequence-3.jsonl",
+      "records": 25,
+      "first_logged_tokens": 20004864,
+      "final_logged_tokens": 500011008,
+      "best_exact": 0.50390625,
+      "best_exact_at_tokens": 500011008,
+      "best_first": 0.53515625,
+      "best_first_at_tokens": 500011008,
+      "final_normal": {
+        "first_accuracy": 0.53515625,
+        "exact_accuracy": 0.50390625,
+        "ce": 3.2027778435889713,
+        "tokens": 350,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.02734375,
+        "exact_accuracy": 0.02734375,
+        "ce": 7.146085061941828,
+        "tokens": 350,
+        "samples": 256
+      },
+      "writer_config": {
+        "block_size": 256,
+        "sequence_windows": 3,
+        "routing_passes": 3,
+        "pooling_heads": 4,
+        "write_chunk_size": 64,
+        "encoder_scope": "full_window"
+      },
+      "recall_includes_newline": null,
+      "support_window": "source",
+      "support_label": false,
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_cloze_W3_evidence_weight20.jsonl",
+      "records": 226,
+      "first_logged_tokens": 870010880,
+      "final_logged_tokens": 1995018240,
+      "best_exact": 0.51953125,
+      "best_exact_at_tokens": 1895014400,
+      "best_first": 0.609375,
+      "best_first_at_tokens": 1845002240,
+      "final_normal": {
+        "first_accuracy": 0.6015625,
+        "exact_accuracy": 0.5078125,
+        "ce": 3.3664733718113347,
+        "tokens": 362,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0,
+        "exact_accuracy": 0.0,
+        "ce": 14.93848710033775,
+        "tokens": 362,
+        "samples": 256
+      },
+      "writer_config": null,
+      "recall_includes_newline": null,
+      "support_window": "not recorded",
+      "support_label": "not recorded",
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_cloze_baseline.jsonl",
+      "records": 160,
+      "first_logged_tokens": 5017600,
+      "final_logged_tokens": 800010240,
+      "best_exact": 0.9375,
+      "best_exact_at_tokens": 735006720,
+      "best_first": 0.95703125,
+      "best_first_at_tokens": 505016320,
+      "final_normal": {
+        "first_accuracy": 0.953125,
+        "exact_accuracy": 0.9375,
+        "ce": 0.4616731739916854,
+        "tokens": 362,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.953125,
+        "exact_accuracy": 0.9375,
+        "ce": 0.4616731739916854,
+        "tokens": 362,
+        "samples": 256
+      },
+      "writer_config": null,
+      "recall_includes_newline": null,
+      "support_window": "not recorded",
+      "support_label": "not recorded",
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_cloze_joint_W0.jsonl",
+      "records": 49,
+      "first_logged_tokens": 20008960,
+      "final_logged_tokens": 980008960,
+      "best_exact": 0.80859375,
+      "best_exact_at_tokens": 780001280,
+      "best_first": 0.8828125,
+      "best_first_at_tokens": 780001280,
+      "final_normal": {
+        "first_accuracy": 0.875,
+        "exact_accuracy": 0.8046875,
+        "ce": 1.4549311814100847,
+        "tokens": 368,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0,
+        "exact_accuracy": 0.0,
+        "ce": 13.311405181884766,
+        "tokens": 368,
+        "samples": 256
+      },
+      "writer_config": null,
+      "recall_includes_newline": null,
+      "support_window": "not recorded",
+      "support_label": "not recorded",
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_iterative_slot_random_assist-labels.jsonl",
+      "records": 55,
+      "first_logged_tokens": 20008960,
+      "final_logged_tokens": 1100001280,
+      "best_exact": 0.859375,
+      "best_exact_at_tokens": 940011520,
+      "best_first": 0.91015625,
+      "best_first_at_tokens": 1000017920,
+      "final_normal": {
+        "first_accuracy": 0.91015625,
+        "exact_accuracy": 0.859375,
+        "ce": 0.7920984986345805,
+        "tokens": 379,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0,
+        "exact_accuracy": 0.0,
+        "ce": 10.307396853504835,
+        "tokens": 379,
+        "samples": 256
+      },
+      "writer_config": null,
+      "recall_includes_newline": null,
+      "support_window": "source",
+      "support_label": "not recorded",
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_memslot16_W2_Frozen_Decoder.jsonl",
+      "records": 40,
+      "first_logged_tokens": 20008960,
+      "final_logged_tokens": 800010240,
+      "best_exact": 0.6015625,
+      "best_exact_at_tokens": 20008960,
+      "best_first": 0.671875,
+      "best_first_at_tokens": 20008960,
+      "final_normal": {
+        "first_accuracy": 0.578125,
+        "exact_accuracy": 0.5078125,
+        "ce": 3.1883362606370804,
+        "tokens": 367,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0,
+        "exact_accuracy": 0.0,
+        "ce": 15.321826238398332,
+        "tokens": 367,
+        "samples": 256
+      },
+      "writer_config": null,
+      "recall_includes_newline": null,
+      "support_window": "not recorded",
+      "support_label": "not recorded",
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_memslot16_joint.jsonl",
+      "records": 22,
+      "first_logged_tokens": 20008960,
+      "final_logged_tokens": 440012800,
+      "best_exact": 0.0703125,
+      "best_exact_at_tokens": 380006400,
+      "best_first": 0.078125,
+      "best_first_at_tokens": 380006400,
+      "final_normal": {
+        "first_accuracy": 0.0625,
+        "exact_accuracy": 0.0625,
+        "ce": 5.979049971713964,
+        "tokens": 366,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0625,
+        "exact_accuracy": 0.0625,
+        "ce": 5.990540107569652,
+        "tokens": 366,
+        "samples": 256
+      },
+      "writer_config": null,
+      "recall_includes_newline": null,
+      "support_window": null,
+      "support_label": "not recorded",
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_memslot16_random_evidence.jsonl",
+      "records": 55,
+      "first_logged_tokens": 20008960,
+      "final_logged_tokens": 1100001280,
+      "best_exact": 0.375,
+      "best_exact_at_tokens": 980008960,
+      "best_first": 0.42578125,
+      "best_first_at_tokens": 980008960,
+      "final_normal": {
+        "first_accuracy": 0.36328125,
+        "exact_accuracy": 0.328125,
+        "ce": 3.8959983535282077,
+        "tokens": 366,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0625,
+        "exact_accuracy": 0.0625,
+        "ce": 6.287330327301078,
+        "tokens": 366,
+        "samples": 256
+      },
+      "writer_config": null,
+      "recall_includes_newline": null,
+      "support_window": null,
+      "support_label": "not recorded",
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_per-slotGRU.jsonl",
+      "records": 55,
+      "first_logged_tokens": 20008960,
+      "final_logged_tokens": 1100001280,
+      "best_exact": 0.6328125,
+      "best_exact_at_tokens": 1020006400,
+      "best_first": 0.6953125,
+      "best_first_at_tokens": 1020006400,
+      "final_normal": {
+        "first_accuracy": 0.64453125,
+        "exact_accuracy": 0.57421875,
+        "ce": 2.3875974567631877,
+        "tokens": 366,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0390625,
+        "exact_accuracy": 0.0390625,
+        "ce": 7.521751440939356,
+        "tokens": 366,
+        "samples": 256
+      },
+      "writer_config": null,
+      "recall_includes_newline": null,
+      "support_window": null,
+      "support_label": "not recorded",
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_slot-width128_memslot16_sequence-3.jsonl",
+      "records": 12,
+      "first_logged_tokens": 20004864,
+      "final_logged_tokens": 240009216,
+      "best_exact": 0.69140625,
+      "best_exact_at_tokens": 240009216,
+      "best_first": 0.73046875,
+      "best_first_at_tokens": 240009216,
+      "final_normal": {
+        "first_accuracy": 0.73046875,
+        "exact_accuracy": 0.69140625,
+        "ce": 1.8379958834354848,
+        "tokens": 350,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0234375,
+        "exact_accuracy": 0.0234375,
+        "ce": 8.654393871511731,
+        "tokens": 350,
+        "samples": 256
+      },
+      "writer_config": {
+        "block_size": 256,
+        "memory_slots": 16,
+        "memory_slot_dims": 128,
+        "sequence_windows": 3,
+        "routing_passes": 3,
+        "pooling_heads": 4,
+        "write_chunk_size": 256,
+        "encoder_scope": "full_window"
+      },
+      "recall_includes_newline": null,
+      "support_window": "source",
+      "support_label": false,
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_width256_memslot8_sequence-3.jsonl",
+      "records": 13,
+      "first_logged_tokens": 260001792,
+      "final_logged_tokens": 500011008,
+      "best_exact": 0.8984375,
+      "best_exact_at_tokens": 460001280,
+      "best_first": 0.92578125,
+      "best_first_at_tokens": 460001280,
+      "final_normal": {
+        "first_accuracy": 0.92578125,
+        "exact_accuracy": 0.89453125,
+        "ce": 0.5860194078139778,
+        "tokens": 350,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0,
+        "exact_accuracy": 0.0,
+        "ce": 10.121321043968202,
+        "tokens": 350,
+        "samples": 256
+      },
+      "writer_config": {
+        "block_size": 256,
+        "memory_slots": 8,
+        "memory_slot_dims": 256,
+        "sequence_windows": 3,
+        "routing_passes": 3,
+        "pooling_heads": 4,
+        "write_chunk_size": 256,
+        "encoder_scope": "full_window"
+      },
+      "recall_includes_newline": null,
+      "support_window": "source",
+      "support_label": false,
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_width256_memslot8_sequence-4.jsonl",
+      "records": 20,
+      "first_logged_tokens": 20004864,
+      "final_logged_tokens": 400015360,
+      "best_exact": 0.9140625,
+      "best_exact_at_tokens": 360005632,
+      "best_first": 0.9375,
+      "best_first_at_tokens": 360005632,
+      "final_normal": {
+        "first_accuracy": 0.92578125,
+        "exact_accuracy": 0.8984375,
+        "ce": 0.4742139776852647,
+        "tokens": 350,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0,
+        "exact_accuracy": 0.0,
+        "ce": 10.114253336361477,
+        "tokens": 350,
+        "samples": 256
+      },
+      "writer_config": {
+        "block_size": 256,
+        "memory_slots": 8,
+        "memory_slot_dims": 256,
+        "sequence_windows": 4,
+        "routing_passes": 3,
+        "pooling_heads": 4,
+        "write_chunk_size": 256,
+        "encoder_scope": "full_window"
+      },
+      "recall_includes_newline": null,
+      "support_window": "source",
+      "support_label": false,
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_width256_memslot8_terminator.jsonl",
+      "records": 110,
+      "first_logged_tokens": 20008960,
+      "final_logged_tokens": 2200002560,
+      "best_exact": 0.82421875,
+      "best_exact_at_tokens": 1940008960,
+      "best_first": 0.87890625,
+      "best_first_at_tokens": 1780019200,
+      "final_normal": {
+        "first_accuracy": 0.875,
+        "exact_accuracy": 0.80078125,
+        "ce": 0.9428869597939056,
+        "tokens": 366,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.07421875,
+        "exact_accuracy": 0.07421875,
+        "ce": 6.528564382405555,
+        "tokens": 366,
+        "samples": 256
+      },
+      "writer_config": {
+        "block_size": 256,
+        "memory_slots": 8,
+        "memory_slot_dims": 256,
+        "sequence_windows": 5,
+        "routing_passes": 3,
+        "pooling_heads": 4,
+        "write_chunk_size": 256,
+        "encoder_scope": "full_window"
+      },
+      "recall_includes_newline": true,
+      "support_window": null,
+      "support_label": false,
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "memory_diagnostics_width256_sequence-5_no-assist.jsonl",
+      "records": 110,
+      "first_logged_tokens": 20008960,
+      "final_logged_tokens": 2200002560,
+      "best_exact": 0.859375,
+      "best_exact_at_tokens": 1840005120,
+      "best_first": 0.8984375,
+      "best_first_at_tokens": 1840005120,
+      "final_normal": {
+        "first_accuracy": 0.89453125,
+        "exact_accuracy": 0.84765625,
+        "ce": 0.8517555437143141,
+        "tokens": 366,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.06640625,
+        "exact_accuracy": 0.06640625,
+        "ce": 6.507796071754779,
+        "tokens": 366,
+        "samples": 256
+      },
+      "writer_config": {
+        "block_size": 256,
+        "memory_slots": 8,
+        "memory_slot_dims": 256,
+        "sequence_windows": 5,
+        "routing_passes": 3,
+        "pooling_heads": 4,
+        "write_chunk_size": 256,
+        "encoder_scope": "full_window"
+      },
+      "recall_includes_newline": null,
+      "support_window": null,
+      "support_label": false,
+      "recall_ratio": null,
+      "ratio_basis": null
+    },
+    {
+      "file": "mixed_diagnostics_width256_memslot8_mixed30-70.jsonl",
+      "records": 69,
+      "first_logged_tokens": 0,
+      "final_logged_tokens": 1340014592,
+      "best_exact": 0.8125,
+      "best_exact_at_tokens": 100012032,
+      "best_first": 0.8828125,
+      "best_first_at_tokens": 1160003584,
+      "final_normal": {
+        "first_accuracy": 0.859375,
+        "exact_accuracy": 0.796875,
+        "ce": 1.107289267463645,
+        "tokens": 366,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0625,
+        "exact_accuracy": 0.0625,
+        "ce": 6.338204971204202,
+        "tokens": 366,
+        "samples": 256
+      },
+      "writer_config": {
+        "block_size": 256,
+        "memory_slots": 8,
+        "memory_slot_dims": 256,
+        "sequence_windows": 5,
+        "routing_passes": 3,
+        "pooling_heads": 4,
+        "write_chunk_size": 256,
+        "encoder_scope": "full_window"
+      },
+      "recall_includes_newline": true,
+      "support_window": "not recorded",
+      "support_label": "not recorded",
+      "recall_ratio": 0.3,
+      "ratio_basis": "optimizer_updates",
+      "best_prose_lm": 4.699729353189468,
+      "best_prose_at_tokens": 1320009728,
+      "recall_at_best_prose": 0.78515625,
+      "final_prose_lm": 4.699965953826904
+    },
+    {
+      "file": "mixed_diagnostics_width256_memslot8_mixed50-50.jsonl",
+      "records": 112,
+      "first_logged_tokens": 0,
+      "final_logged_tokens": 2200014848,
+      "best_exact": 0.86328125,
+      "best_exact_at_tokens": 1440002048,
+      "best_first": 0.91796875,
+      "best_first_at_tokens": 1840001024,
+      "final_normal": {
+        "first_accuracy": 0.91015625,
+        "exact_accuracy": 0.8359375,
+        "ce": 0.8163558811646252,
+        "tokens": 366,
+        "samples": 256
+      },
+      "final_no_read": {
+        "first_accuracy": 0.0625,
+        "exact_accuracy": 0.0625,
+        "ce": 6.4231468446837745,
+        "tokens": 366,
+        "samples": 256
+      },
+      "writer_config": {
+        "block_size": 256,
+        "memory_slots": 8,
+        "memory_slot_dims": 256,
+        "sequence_windows": 5,
+        "routing_passes": 3,
+        "pooling_heads": 4,
+        "write_chunk_size": 256,
+        "encoder_scope": "full_window"
+      },
+      "recall_includes_newline": true,
+      "support_window": "not recorded",
+      "support_label": "not recorded",
+      "recall_ratio": 0.5,
+      "ratio_basis": "optimizer_updates",
+      "best_prose_lm": 4.720669746398926,
+      "best_prose_at_tokens": 2120019968,
+      "recall_at_best_prose": 0.8359375,
+      "final_prose_lm": 4.724119693040848
+    }
+  ]
+}

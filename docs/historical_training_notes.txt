@@ -1,0 +1,65 @@
+MiniGPTRecall Encoder-Decoder Training:
+Step 1: Train with offset training - will establish near 100% recall at around 250M tokens
+Step 2: Train with ALL_FACTS_ONE_QA set to True - will establish query dependent memory slots at around 370M tokens (confirms associative recall)
+Step 3: Train with multiple Fact and QA's - will determine memory load and slot capacity capabilities -860M tokens seen at 80% accuracy
+Step 4: Train with paraphrased valid and training FAQ setups - set min and max FAQ count to 1 to 3 
+
+Encoder Paraphrased FAQs:
+Step 1: Train with offset training - established near 100% recall accuracy at 480M tokens
+Step 2: Train with ALL_FACTS_ONE_QA set to True - will establish query dependent memory slots at around  tokens (confirms associative recall)
+Step 3: Train with multiple Fact and QA's - will determine memory load and slot capacity capabilities (1 - 3 associations)
+Step 4: Same as Step 3; change assoications to (1 - 5)
+
+
+MiniGPTRecall Cloze Testing:
+STEP 1 DECODER-ONLY TRAINING ON CLOZE STYLE QUESTIONS; FROZEN MEMORY: Run decoder only training with the following config:
+    RECALL_LOSS_WEIGHT = 10.0
+    GUTENBERG_SUPPORT_WINDOW = 4
+    GUTENBERG_DECODER_ONLY = True
+
+Load only the weights from Encoder_Paraphrase_3FAQ into checkpoints_memory as latest.pt
+make sure checkpoints_gutenberg_qa is empty so only the weights are loaded
+
+STEP 2 MEMORY-ONLY TRAINING; FROZEN DECODER: Load only the weights from the previous run with the following config:
+    GUTENBERG_DECODER_ONLY = False
+    GUTENBERG_MEMORY_ONLY = True
+    GUTENBERG_EVIDENCE_WINDOWS = (3,)
+    GUTENBERG_SUPPORT_WINDOW = 3
+    RECALL_LOSS_WEIGHT = 20.0
+    learn_rate = 3e-5
+
+Load only the weights by placing the new latest.pt into checkpoints_memory 
+and emptying the contents of checkpoints_gutenberg_qa before startup
+
+STEP 3 MEMORY-ONLY TRAINING PART 2: Adjust the evidence support placement and source to W2:
+    GUTENBERG_EVIDENCE_WINDOWS = (2,)
+    GUTENBERG_SUPPORT_WINDOW = 2
+
+All other configs remain unchanged
+
+STEP 3 MEMORY-ONLY TRAINING PART 3: Adjust the evidence support placement and source to W1:
+    GUTENBERG_EVIDENCE_WINDOWS = (1,)
+    GUTENBERG_SUPPORT_WINDOW = 1
+
+All other configs remain unchanged
+
+STEP 3 MEMORY-ONLY TRAINING PART 4: Adjust the evidence support placement and source to W0:
+    GUTENBERG_EVIDENCE_WINDOWS = (0,)
+    GUTENBERG_SUPPORT_WINDOW = 0
+
+All other configs remain unchanged
+
+STEP 4 UNFREEZE DECODER: Train on same window config as STEP 3 PART 4; evaluate change in LM loss relative to Recall loss
+Config settings to change:
+
+    GUTENBERG_DECODER_ONLY = False
+    GUTENBERG_MEMORY_ONLY = False
+    MEMORY_LR_SCALE = 1.0 
+    DECODER_LR_SCALE = 0.5
+
+STEP 5: Same run; adjust DECODER_LR_SCALE; load weights only
+    DECODER_LR_SCALE = 1.0
+
+STEP 6: Randomize source of evidence and remove support evidence placement; load weights only
+    GUTENBERG_EVIDENCE_WINDOWS = None
+    GUTENBERG_SUPPORT_WINDOW = None
