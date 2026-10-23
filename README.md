@@ -328,4 +328,7 @@ Local user paths in supplied diagnostic metadata have been replaced with
 portable references. Evaluation token IDs and measured metrics are preserved.
 See [release notes](docs/RELEASE_NOTES.md) for code changes and validation limits.
 
-License under MIT License
+The source code is licensed under the [MIT License](LICENSE).
+
+Project Gutenberg text and tokenized excerpts retain their applicable
+copyright status and terms; they are not covered by this project's code license.
