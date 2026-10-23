@@ -17,6 +17,17 @@ one missing word, not unrestricted factual question answering. Coherent story
 generation and transfer to questions about the model's own generated prose
 remain separate objectives under investigation.
 
+Currently exploring pre-trained models to generate open-ended style questions
+instead of one-word cloze style questions from the Gutenberg dataset in 5
+context window sequences. Limiting recall to 4 context windows is a design
+choice, not necessarily a limitation that has been established.
+
+Also investigating using a MoE architecture pattern to seperate prose
+generation from recall objectives due to the fact that they seem to 
+compete as training objectives.
+
+
+
 ## Measured results
 
 The supplied files support the following results. “Exact” in this table means
