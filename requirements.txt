@@ -1,0 +1,8 @@
+# Install a PyTorch build appropriate for your CPU/CUDA first:
+# https://pytorch.org/get-started/locally/
+# These are compatibility ranges, NOT a historical experiment lockfile.
+torch>=2.4,<3
+tiktoken>=0.7,<1
+numpy>=1.26,<3
+datasets>=2.19,<5
+huggingface_hub>=0.23,<2

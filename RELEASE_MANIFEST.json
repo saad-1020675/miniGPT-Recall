@@ -1,0 +1,356 @@
+{
+  "format_version": 1,
+  "description": "Cleaned source and supplied diagnostics; no checkpoints or full dataset.",
+  "files": [
+    {
+      "path": ".github/workflows/cpu-tests.yml",
+      "bytes": 504,
+      "sha256": "aa9131601ec01a6a4d5afcca91f11f2ba3799445937b478b535b7ef7527f1a44"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 348,
+      "sha256": "692f6bce4232c0bbc6243ba3c3aab2f0d15af8bc5efffb76b00e743b948c5ebe"
+    },
+    {
+      "path": "LICENSE-NOTICE.md",
+      "bytes": 643,
+      "sha256": "584fa5e49ecf9e66ff810e1da59f13000f7a0217d4e9c110c7fb165585143ee7"
+    },
+    {
+      "path": "README.md",
+      "bytes": 16283,
+      "sha256": "e24a1885600ae2dd64c90a3113dc295d87413c39db6133f6cfc793affd1ec3f8"
+    },
+    {
+      "path": "build_gutenberg_qa.py",
+      "bytes": 7809,
+      "sha256": "5eb53c365c1472372bcf911e034eaa6e4cafd8f51eb38e0cf0bfb037778bae91"
+    },
+    {
+      "path": "checkpoint.py",
+      "bytes": 6044,
+      "sha256": "03e6a9cbd1311d2df73cab182a0187b0b76d3abdb9d95806e764d78767f3bd5f"
+    },
+    {
+      "path": "config.py",
+      "bytes": 9651,
+      "sha256": "4889c797452dfc29585b85b32b0b0959b1df85e4814793e18c2457cd0e0b3f86"
+    },
+    {
+      "path": "configs/baseline_8x256.json",
+      "bytes": 294,
+      "sha256": "80ea17baa17cd54301dc768762a2eb25d090d4b02480433a3b4bf2627de6f42b"
+    },
+    {
+      "path": "configs/supplied_384_experiment.json",
+      "bytes": 294,
+      "sha256": "67994737ca48d4f8e355c768ac693de4c2b34576b7c77667c591ec71d77a3b09"
+    },
+    {
+      "path": "data_loader.py",
+      "bytes": 34936,
+      "sha256": "d22e2c48837c0cdc811a30f9810cd83abeeae9c2194e8738e2acb38e3bb2cdb1"
+    },
+    {
+      "path": "dataset_utils.py",
+      "bytes": 844,
+      "sha256": "0d2631e6ebcfe507db52121b35f3ec38f1578e4a03faf6d745808d3f52344402"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 4196,
+      "sha256": "84cd68dee5d351c241d0574ee7dde8bcda7eb5ad330b814f62aa497e5924f2ad"
+    },
+    {
+      "path": "docs/DATA.md",
+      "bytes": 5249,
+      "sha256": "94afdcfc40c4b021881ffd36f3440c746e58128a4cd37e741a64a591eeeee2c7"
+    },
+    {
+      "path": "docs/EVALUATION.md",
+      "bytes": 5040,
+      "sha256": "e98c11ae0b3bd5392b977055a65317904b5bf1e647951981ae7ec1078d4a3c7c"
+    },
+    {
+      "path": "docs/RELEASE_NOTES.md",
+      "bytes": 3910,
+      "sha256": "888c7434de8bb1173253a8c7ee975024406c0f9b35cd2216f028e18f1b2c0c9a"
+    },
+    {
+      "path": "docs/REPRODUCTION.md",
+      "bytes": 3212,
+      "sha256": "f479c0cfae966973c339dd75296a83e69061258bb5633f7a6c49b8ce2969bda1"
+    },
+    {
+      "path": "docs/RESULTS.md",
+      "bytes": 6349,
+      "sha256": "9771114f7c05195c50135d7c94822f4593a9649223de245b2b9179062e8d6424"
+    },
+    {
+      "path": "docs/TRAINING.md",
+      "bytes": 6651,
+      "sha256": "4e0d83b589fff66e93f9b799cbc973f879464e7c45f0e3b38ee3df753ce9cf31"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 2431,
+      "sha256": "486c68571c758f52d91172cd31d6fdc2ff6a61d3b14a3ac2914e1487d189d95c"
+    },
+    {
+      "path": "docs/historical_training_notes.txt",
+      "bytes": 3014,
+      "sha256": "b1ba6e2167924752d7da72a1b4d39d8268d4d0a916ca18652d47257ef17f86ab"
+    },
+    {
+      "path": "download_gutenberg.py",
+      "bytes": 3039,
+      "sha256": "c691a167ebab2532726d098c8492e5c4fb4bdc0f868f3f65c49df76b58bbd26a"
+    },
+    {
+      "path": "generate_RNN.py",
+      "bytes": 17285,
+      "sha256": "891f6ec3857d7b9c943796616aa7353d6511b5afd8f280ff95fcfb7ae09dac66"
+    },
+    {
+      "path": "gutenberg_qa_loader.py",
+      "bytes": 12882,
+      "sha256": "1dfa2db063a0c9ec87ea8d7ccd5a051dbed81300fb24672189c233a7e7d836a3"
+    },
+    {
+      "path": "memory_bottleneck_audit.py",
+      "bytes": 39619,
+      "sha256": "3f11a23cc933a9513767aea31c7ec88ff64e59728334d25a607b0b2f28d51bd5"
+    },
+    {
+      "path": "memory_intervention_audit.py",
+      "bytes": 27274,
+      "sha256": "9d3fce998fc38a9559e8e083da8ff22a7558ac813e501241fa802a459b0217a8"
+    },
+    {
+      "path": "miniGPT_model_RNN.py",
+      "bytes": 27095,
+      "sha256": "dd3a14e0a6faf4bee390d464f3741712a870bca9f0587ca48fff142d5813b19c"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 267,
+      "sha256": "aa1f93707ef65deb404969fae27d55c0688f0c28a0495f76641b64ede9e60dd2"
+    },
+    {
+      "path": "results/audits/no_assist_1024/manifest.json",
+      "bytes": 18233920,
+      "sha256": "dc1d7d7f69ef00c65aa9029ce07039c469968b91185576b48fce66d3566d6f38"
+    },
+    {
+      "path": "results/audits/no_assist_1024/per_sample.csv",
+      "bytes": 1404784,
+      "sha256": "f606fec5eef3692e434db8afa26c77eec5493a15d300031bbbb50df68590d0ae"
+    },
+    {
+      "path": "results/audits/no_assist_1024/report.md",
+      "bytes": 5689,
+      "sha256": "0b9fc35e041632eab56ab9e324e9858c61e0beff6d9dca6ae87c0b2d0b8ab465"
+    },
+    {
+      "path": "results/audits/no_assist_1024/summary.json",
+      "bytes": 56010,
+      "sha256": "de662772d612515076641dae4b41c15e56c55481dbbcf954eb379957d83a7f2c"
+    },
+    {
+      "path": "results/audits/trainer_validation_256/manifest.json",
+      "bytes": 4840800,
+      "sha256": "a101364084e09c00b9749a6fb33ebe6d1010e6666561c5a62a903316a6533336"
+    },
+    {
+      "path": "results/audits/trainer_validation_256/per_sample.csv",
+      "bytes": 348021,
+      "sha256": "4a94bc2b965e38fef95bef182ed980a3f438cb4e4138419323ee1d4cc71a886e"
+    },
+    {
+      "path": "results/audits/trainer_validation_256/report.md",
+      "bytes": 5758,
+      "sha256": "35f8bb8c0ee31f48961e09b57e130f03d9d69ec854c887a628fabf095bc0ec5a"
+    },
+    {
+      "path": "results/audits/trainer_validation_256/summary.json",
+      "bytes": 53781,
+      "sha256": "932e003b73c7763a522a2cf726b37de3df6dcb47cdc1e70d1c9cd5b4dac3771e"
+    },
+    {
+      "path": "results/audits/trainer_validation_256/trainer_validation_manifest.json",
+      "bytes": 4840800,
+      "sha256": "a101364084e09c00b9749a6fb33ebe6d1010e6666561c5a62a903316a6533336"
+    },
+    {
+      "path": "results/training/memory_diagnostic_memslot32_per-slotGRU.jsonl",
+      "bytes": 15194,
+      "sha256": "d06185b39fb9fffed380014af8bf5d3e0df315a0ec25b50686cd4f3da0651c87"
+    },
+    {
+      "path": "results/training/memory_diagnostic_width384_mem8_mixed30-70.jsonl",
+      "bytes": 31891,
+      "sha256": "f281cd0d7542cf7dccd7d7023ff3c2997cdc328aa2d86a8dcba670265c62f2e5"
+    },
+    {
+      "path": "results/training/memory_diagnostics_1_chunk._sequence-3_no_label.jsonl",
+      "bytes": 15167,
+      "sha256": "f64c869e7716f64349512b7ac47b015bd246b278a38a930bb3174ae5efdca66c"
+    },
+    {
+      "path": "results/training/memory_diagnostics_Decoder_Only_W4_Evidence.jsonl",
+      "bytes": 98599,
+      "sha256": "2654e05c3609963a19887ac3663003228c9635100c5b2d4c4c740e586392f680"
+    },
+    {
+      "path": "results/training/memory_diagnostics_W0_Evidence_weight10.jsonl",
+      "bytes": 551613,
+      "sha256": "2dd3edc7d4e304258539f8de223916678ed2e4cbc26d80d84fdbee7caf858a13"
+    },
+    {
+      "path": "results/training/memory_diagnostics_W3_Evidence_Memory_Only_Pt1.jsonl",
+      "bytes": 368693,
+      "sha256": "1f3cf4d951a4e72dbfed0321183bf7f7682ea6830dd2182636a5301b49129573"
+    },
+    {
+      "path": "results/training/memory_diagnostics_chunks_sequence-3.jsonl",
+      "bytes": 31625,
+      "sha256": "f87cd67f0508d8800d0f0d22c88d1eb2fa0367e333cc33a357ba6dc6a965702c"
+    },
+    {
+      "path": "results/training/memory_diagnostics_cloze_W3_evidence_weight20.jsonl",
+      "bytes": 484096,
+      "sha256": "0a0fc64d76760f9ca4487aaf8cd9f4018a7b105d794df0d3bbcf7975514cab08"
+    },
+    {
+      "path": "results/training/memory_diagnostics_cloze_baseline.jsonl",
+      "bytes": 345102,
+      "sha256": "b035108708ef9d3649ca00c45a011b359f23db94b3c1f79eb759dbdf6698e22e"
+    },
+    {
+      "path": "results/training/memory_diagnostics_cloze_joint_W0.jsonl",
+      "bytes": 106997,
+      "sha256": "f22d63f644a5bd05da98a01dedb7956f27ecbb8131190ab42925c2e1557ab125"
+    },
+    {
+      "path": "results/training/memory_diagnostics_iterative_slot_random_assist-labels.jsonl",
+      "bytes": 73764,
+      "sha256": "be7b949e2541fc830a551c690a53667354937cc8cda291967036bbb0f36a3896"
+    },
+    {
+      "path": "results/training/memory_diagnostics_memslot16_W2_Frozen_Decoder.jsonl",
+      "bytes": 86696,
+      "sha256": "f2d8e141accd073f81d4338bd162fd3aa4a3cbfa994465c6148e1ebfa5881afc"
+    },
+    {
+      "path": "results/training/memory_diagnostics_memslot16_joint.jsonl",
+      "bytes": 29396,
+      "sha256": "9cd1435562904af14556da1f0ef77b09cc0704116cc45056ac786fb52be04a63"
+    },
+    {
+      "path": "results/training/memory_diagnostics_memslot16_random_evidence.jsonl",
+      "bytes": 73833,
+      "sha256": "aa1fe44218e1a35eab85c6a32311e41a5deb95726dafae61f7fce0704f8fe289"
+    },
+    {
+      "path": "results/training/memory_diagnostics_per-slotGRU.jsonl",
+      "bytes": 73860,
+      "sha256": "61917549c92a5e9a0f0a14c996dc4dc66b3a67a11e681b2e1ff406ea34583d75"
+    },
+    {
+      "path": "results/training/memory_diagnostics_slot-width128_memslot16_sequence-3.jsonl",
+      "bytes": 15713,
+      "sha256": "1b06fa780b36ecade356823c61fc030ede83c06e043f306f348d886ceef83f2a"
+    },
+    {
+      "path": "results/training/memory_diagnostics_width256_memslot8_sequence-3.jsonl",
+      "bytes": 17012,
+      "sha256": "c27afd7aa949f15464c59f4984d1642c65e2d69c358d9b9a4a80268d33da8569"
+    },
+    {
+      "path": "results/training/memory_diagnostics_width256_memslot8_sequence-4.jsonl",
+      "bytes": 28932,
+      "sha256": "64a4bb8f43b4bb68a5d0f080b19a41c0fde126045fb2d7cb0c399ee985242c06"
+    },
+    {
+      "path": "results/training/memory_diagnostics_width256_memslot8_terminator.jsonl",
+      "bytes": 176671,
+      "sha256": "23bb917a3eea32b76ccd9ec2e8eac88db60bfbb8a082569243340fb3c5c43bf5"
+    },
+    {
+      "path": "results/training/memory_diagnostics_width256_sequence-5_no-assist.jsonl",
+      "bytes": 172888,
+      "sha256": "7d69acf7283f7cc7ffae131ab72d0b0915f4db75d9b47ff190b964743c416563"
+    },
+    {
+      "path": "results/training/mixed_diagnostics_width256_memslot8_mixed30-70.jsonl",
+      "bytes": 127841,
+      "sha256": "63db970506bf82367c793afa747daae9f6d44bc022ff4271d99d33c2f7dc7102"
+    },
+    {
+      "path": "results/training/mixed_diagnostics_width256_memslot8_mixed50-50.jsonl",
+      "bytes": 207470,
+      "sha256": "88ba5aca64297ebb7418d570f1cbea424c004882dc1fa850d852f342f02e486d"
+    },
+    {
+      "path": "results/training_index.json",
+      "bytes": 22773,
+      "sha256": "53a3d13018dd8b087b000835a27ba997acae1e413eeb447e29ae749c8ba31a0e"
+    },
+    {
+      "path": "test_release.py",
+      "bytes": 7779,
+      "sha256": "20239c68e8c960e2ba0f58f686e6493d2aa4c3c13b81a8b8b4f09b0bedcfeb4c"
+    },
+    {
+      "path": "test_window_retention_audit.py",
+      "bytes": 8054,
+      "sha256": "72352ad471add016a66e702e0621951c8a48e2c4040b5ad82ee7c62a21a4103e"
+    },
+    {
+      "path": "tokenizer.py",
+      "bytes": 186,
+      "sha256": "9f2732b92b6365212a41fd303893ace0a878ea35de088c174f3a28cdcb8b44b1"
+    },
+    {
+      "path": "tools/export_checkpoint.py",
+      "bytes": 2152,
+      "sha256": "a428551e03cc71d44862e15300c825072ff2234971fb25fc73a5ec5fd60992a7"
+    },
+    {
+      "path": "tools/inspect_model.py",
+      "bytes": 814,
+      "sha256": "41af46a23051940816fb92b03b73630ce4cd5758f5c7ca231c659da03c5ffbb8"
+    },
+    {
+      "path": "tools/run_training.py",
+      "bytes": 1900,
+      "sha256": "f267de83bd4aed403a1ea0d9bc1bc879d27296e71bd31b3c4597ee11cd08cc33"
+    },
+    {
+      "path": "tools/summarize_runs.py",
+      "bytes": 2717,
+      "sha256": "7835ec231e2798f84c943bafb662947dbe276a9bb9f30735fd3845d4d11b309d"
+    },
+    {
+      "path": "training_RNN.py",
+      "bytes": 39368,
+      "sha256": "248295acfda5403f11d89f287f649088b3e0ea87e5dafda81b03b0c296929518"
+    },
+    {
+      "path": "training_RNN_gutenberg.py",
+      "bytes": 91355,
+      "sha256": "490156325dac565a768e59dc96f5cbfe9bd8198e8605e0ae827eb7a6fbb19c52"
+    },
+    {
+      "path": "training_RNN_mixed.py",
+      "bytes": 85533,
+      "sha256": "7cbe2ed697e9a52ff07a2e6d6548c077a9e280795d46ac8eaa577872995ce941"
+    },
+    {
+      "path": "window_retention_audit.py",
+      "bytes": 32728,
+      "sha256": "8b9e4f9947fa1ba621813a9a84d686ddc2ef8cdf5d0196284fd2b36b59a2b6ce"
+    }
+  ]
+}
