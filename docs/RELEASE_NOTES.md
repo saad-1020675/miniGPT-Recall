@@ -60,7 +60,7 @@ summaries. They distinguish assistance, sequence length, teacher forcing,
 validation population, and peaks at different checkpoints. CPU smoke checks
 verify mechanics; they do not establish the reported recall or prose quality.
 
-The source code is licensed under the [MIT License](LICENSE).
+The source code is licensed under the [MIT License](../LICENSE).
 
 Project Gutenberg text and tokenized excerpts retain their applicable
 copyright status and terms; they are not covered by this project's code license.
